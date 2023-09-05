@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'BEGIN{ cmd = "grep -io \047[actgn]\047 | wc -l" } NR % 2 { print } NR % 2 == 0 { print | cmd; close(cmd) }' file.fasta
+awk 'NR%2==1'
