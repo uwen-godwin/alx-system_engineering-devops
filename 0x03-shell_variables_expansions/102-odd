@@ -1,8 +1,2 @@
 #!/bin/bash
-for ((n=5, j=1; j<=9;j++)); do
-    if [ $((j%2)) -eq 1 ]; then
-        echo "rez: $n*$j"=$((n*j))
-    else
-        echo
-    fi
-done
+awk 'BEGIN{ cmd = "grep -io \047[actgn]\047 | wc -l" } NR % 2 { print } NR % 2 == 0 { print | cmd; close(cmd) }' file.fasta
