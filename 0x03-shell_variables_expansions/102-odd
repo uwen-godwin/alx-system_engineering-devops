@@ -1,2 +1,8 @@
 #!/bin/bash
-awk 'FNR==NR{lines[$0]=1;next} !($0 in lines)' file1 file2
+for ((n=5, j=1; j<=9;j++)); do
+    if [ $((j%2)) -eq 1 ]; then
+        echo "rez: $n*$j"=$((n*j))
+    else
+        echo
+    fi
+done
