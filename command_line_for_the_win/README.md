@@ -1,64 +1,62 @@
 # Welcome to my command line for the win Project.
 
-## This repository details of a command line challenge
+## This repository contain details of a command line challenge
 
-Task 0ne: Your first challenge is to print "hello world" on the terminal in a single command.
+### Task 0ne: Your first challenge is to print "hello world" on the terminal in a single command.
 
 Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!
 
 Ans: Any of the following commands work perfectly.
-echo "hello world"
-echo hello world
-echo 'hello world'
-printf "hello world"
-echo hello\ world
-printf 'hello world'
-echo "hello world";
-'echo' hello world
-'echo' "hello world"
-echo " hello world"
-echo "hello world "
-echo -n "hello world"
-printf "hello world\n"
-echo  "hello world"
-echo 'hello world';
-cat <<< "hello world"
-echo ""hello world""
-printf "%s" "hello world"
-echo ''hello world''
-echo " hello world "
-echo  hello world
-echo "hello world" > hello.txt && cat hello.txt
-echo -e "hello world"
-printf "hello world";
-echo hello world;
-echo 'hello world '
-echo -n hello world
-echo $"hello world"
-echo  'hello world'
-printf -- "hello world\n"
-echo ""hello world
-echo -e hello world
-echo "uryyb jbeyq" | tr '[n-za-m]' '[a-z]'
-"echo" hello world
-'echo' 'hello world'
-printf '%s' "hello world"
-echo "hello world" >> texto.txt | cat texto.txt
-echo ' hello world'
-command echo hello world
-echo "hello world"\
-echo "hello world"; touch text.txt
-echo "hello world" >> file1 && cat file1
-echo "hello "world
-'echo' "hello world";
-echo -e ''hello world''
-printf "%s %s" hello world
-printf '%s\n' 'hello world'
-printf '%s %s\n' hello world
-echo 'hello world' ;
-echo -ne "hello world"
-screenshots: "C:\Users\Uwen Godwin\Desktop\alx image file\0-first_9_tasks.png.png"
-"C:\Users\Uwen Godwin\Desktop\alx image file\0-first_9_tasks.jpg.png"
+- echo "hello world"
+- echo hello world
+- echo 'hello world'
+- printf "hello world"
+- echo hello\ world
+- printf 'hello world'
+- echo "hello world";
+- 'echo' hello world
+- 'echo' "hello world"
+- echo " hello world"
+- echo "hello world "
+- echo -n "hello world"
+- printf "hello world\n"
+- echo  "hello world"
+- echo 'hello world';
+- cat <<< "hello world"
+- echo ""hello world""
+- printf "%s" "hello world"
+- echo ''hello world''
+- echo " hello world "
+- echo  hello world
+- echo "hello world" > hello.txt && cat hello.txt
+- echo -e "hello world"
+- printf "hello world";
+- echo hello world;
+- echo 'hello world '
+- echo -n hello world
+- echo $"hello world"
+- echo  'hello world'
+- printf -- "hello world\n"
+- echo ""hello world
+- echo -e hello world
+- echo "uryyb jbeyq" | tr '[n-za-m]' '[a-z]'
+- "echo" hello world
+- 'echo' 'hello world'
+- printf '%s' "hello world"
+- echo "hello world" >> texto.txt | cat texto.txt
+- echo ' hello world'
+- command echo hello world
+- echo "hello world"\
+- echo "hello world"; touch text.txt
+- echo "hello world" >> file1 && cat file1
+- echo "hello "world
+- 'echo' "hello world";
+- echo -e ''hello world''
+- printf "%s %s" hello world
+- printf '%s\n' 'hello world'
+- printf '%s %s\n' hello world
+- echo 'hello world' ;
+- echo -ne "hello world"
 
 Task two: Print the current working directory.
 Ans:  Any of the following commands work perfectly.
