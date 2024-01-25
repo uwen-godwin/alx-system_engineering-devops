@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script groups visitors by IP and HTTP status code, and displays this data.
+
+# Check if apache-access.log file exists
+if [ -f "apache-access.log" ]; then
+    # Group by IP and HTTP status code using grep, sort, uniq, and cut
+    grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3} [0-9]{3}' apache-access.log | sort | uniq -c | sort -rn
+else
+    echo "Error: apache-access.log file not found."
+fi
