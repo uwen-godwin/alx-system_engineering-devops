@@ -8,36 +8,22 @@ int infinite_while(void)
     {
         sleep(1);
     }
-    return 0;
+    return (0);
 }
 
 int main(void)
 {
-    int i;
-
-    for (i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++)
     {
-        pid_t pid = fork();
+        pid_t child_pid = fork();
 
-        if (pid > 0)
+        if (child_pid == 0)
         {
-            // Parent process
-            printf("Zombie process created, PID: %d\n", pid);
-            sleep(2); // Let the child become a zombie
-        }
-        else if (pid == 0)
-        {
-            // Child process
+            printf("Zombie process created, PID: %d\n", getpid());
             exit(0);
-        }
-        else
-        {
-            perror("Fork failed");
-            exit(1);
         }
     }
 
-    infinite_while(); // Keep the parent process alive
-
-    return 0;
+    infinite_while();
+    return (0);
 }
