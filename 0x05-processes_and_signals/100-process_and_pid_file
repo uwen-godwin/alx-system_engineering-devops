@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-# This script creates a PID file and displays messages on signals.
+# This script creates a PID file and displays messages on receiving signals.
 
-PID_FILE="/var/run/myscript.pid"
+pid_file="/var/run/myscript.pid"
 
-trap 'rm -f $PID_FILE; exit' SIGQUIT SIGTERM
+trap 'rm -f $pid_file; exit' SIGQUIT SIGTERM
 
-echo $$ > $PID_FILE
+echo $$ > $pid_file
+echo "To infinity and beyond"
 
 while true; do
-    echo "To infinity and beyond"
     sleep 2
 done

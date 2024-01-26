@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script kills the process created by 7-highlander.
+# This script kills the 7-highlander process.
 
-kill -SIGKILL $(ps aux | grep "To infinity and beyond" | awk '{print $2}' | head -n 1)
+-SIGTERM "$(pgrep -f "7-highlander")"
