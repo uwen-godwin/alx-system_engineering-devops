@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script kills the process created by 7-highlander.
+
+kill -SIGKILL $(ps aux | grep "To infinity and beyond" | awk '{print $2}' | head -n 1)
