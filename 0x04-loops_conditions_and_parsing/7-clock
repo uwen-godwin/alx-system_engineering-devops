@@ -10,7 +10,7 @@ while [ $hour -le 12 ]; do
     
     minute=0
     while [ $minute -le 59 ]; do
-        if [ $hour -eq 0 -a $minute -ge 1 ]; then
+        if [ $hour -eq 0 ] && [ $minute -ge 1 ]; then
             echo $minute
         elif [ $hour -eq 1 ]; then
             echo $minute
