@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# This script manages the process created by 100-process_and_pid_file.
+
+PID_FILE="/var/run/myscript.pid"
+SCRIPT="./100-process_and_pid_file"
+
+case "$1" in
+    start)
+        $SCRIPT &
+        echo $! > $PID_FILE
+        echo "manage_my_process started"
+        ;;
+    stop)
+        kill -SIGTERM $(cat $PID_FILE)
+        rm -f $PID_FILE
+        echo "manage_my_process stopped"
+        ;;
+    restart)
+        kill -SIGTERM $(cat $PID_FILE)
+        rm -f $PID_FILE
+        $SCRIPT &
+        echo $! > $PID_FILE
+        echo "manage_my_process restarted"
+        ;;
+    *)
+        echo "Usage: manage_my_process {start|stop|restart}"
+        ;;
+esac
