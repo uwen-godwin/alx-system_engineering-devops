@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # This script stops the process created by 4-to_infinity_and_beyond without using kill.
 
-kill -SIGTERM $(ps aux | grep "To infinity and beyond" | awk '{print $2}' | head -n 1)
+# Use pgrep to find the process ID and send SIGTERM signal to the first match
+kill -SIGTERM "$(pgrep -f "To infinity and beyond" | head -n 1)"
