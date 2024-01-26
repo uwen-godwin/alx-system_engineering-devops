@@ -4,7 +4,7 @@
 script_pid=$$
 
 # Get the PIDs of processes containing the word "bash"
-mapfile -t bash_pids < <(pgrep -f bash)
+bash_pids=($(pgrep -f bash))
 
 # Display the PIDs along with the process name
 for pid in "${bash_pids[@]}"; do
