@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# Get the PIDs and process names of all processes containing the word "bash"
-while read -r pid name; do
-    echo "$pid $name"
+
+# Get the PID of the current script
+script_pid=$$
+
+# Get the PIDs of all processes containing the word "bash"
+while read -r; do
+    echo "$script_pid bash"
 done < <(pgrep -f bash)
