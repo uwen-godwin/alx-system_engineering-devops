@@ -2,9 +2,9 @@
 # This script displays "Best School" 10 times, but for the 9th iteration, displays "Hi" on a new line.
 
 for ((i=0; i<11; i++)); do
-  if [ $i -eq 9 ]; then
-    echo "Hi"
-  else
-    echo "Best School"
-  fi
+    if [ $i -eq 9 ]; then
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
 done
