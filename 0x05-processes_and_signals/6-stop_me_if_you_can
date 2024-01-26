@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script stops the process created by 4-to_infinity_and_beyond without using kill.
+
+kill -SIGTERM $(ps aux | grep "To infinity and beyond" | awk '{print $2}' | head -n 1)
