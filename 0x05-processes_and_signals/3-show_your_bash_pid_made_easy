@@ -1,14 +1,5 @@
 #!/usr/bin/env bash
-# Get the PID of the current script
+# Displays the PID along with the process name, of 
+#+ processes whose name contains the word "bash".
 
-script_pid=$$
-count=0
-
-while read -r; do
-    echo "$script_pid bash"
-    ((count++))
-    
-    if [ $count -eq 2 ]; then
-        break
-    fi
-done < <(pgrep -f bash)
+pgrep bash -l
