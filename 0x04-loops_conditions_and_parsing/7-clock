@@ -3,7 +3,9 @@
 
 hour=0
 
-while [ $hour -le 12 ]; do
+echo "Hour: $hour"
+
+while [ $hour -le 9 ]; do
     if [ $hour -eq 1 ]; then
         echo "Hour: $hour"
     fi
