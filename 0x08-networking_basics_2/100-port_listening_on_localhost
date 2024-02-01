@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script listens on port 98 on localhost and prints received data
+
+# Use netcat to listen on port 98, piping the received data to stdout
+nc -l -p 98 -k 2>&1
