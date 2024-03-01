@@ -39,7 +39,7 @@ To view the whiteboard diagrams and solution files, simply navigate to the provi
 
 ## Contributor
 
-- [Your Name](https://github.com/uwen-godwin)
+- [Github profile](https://github.com/uwen-godwin)
 
 Feel free to contribute by providing feedback, suggesting improvements, or submitting pull requests!
 
