@@ -1,6 +1,6 @@
-# Puppet manifest to execute a command to kill a process named killmenow
-exec { 'killmenow':
-  command     => 'pkill killmenow',
-  path        => ['/bin', '/usr/bin'],
-  refreshonly => true,
+# kill process killmenow
+
+exec { 'pkill':
+  command  => 'pkill killmenow',
+  provider => 'shell',
 }
